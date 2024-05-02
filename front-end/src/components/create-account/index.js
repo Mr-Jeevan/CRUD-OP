@@ -107,8 +107,8 @@ function CreateAccount() {
             formData.append('c_password', userConfirmPassword);
 
             try {
-                // const response = await axios.post('http://localhost:3001/users/Users', formData, {
-                const response = await axios.post('https://docs.github.com/articles/troubleshooting-custom-domains/#github-repository-setup-errors/Users', formData, {
+                const response = await axios.post('http://localhost:3001/users/Users', formData, {
+                    // const response = await axios.post('https://docs.github.com/articles/troubleshooting-custom-domains/#github-repository-setup-errors/Users', formData, {
                     headers: {
                         'content-Type': 'multipart/form-data'
                     }

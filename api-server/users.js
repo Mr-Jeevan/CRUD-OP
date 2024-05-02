@@ -36,7 +36,6 @@ router.post('/Users', upload.single('identity'), async function (req, res) {
     newUser.password = passwordHash;
     newUser.c_password = cpasswordHash;
 
-    console.log("Image path ------>", newUser.identity)
     if (newUser.fullname && newUser.fName && newUser.lName && newUser.email && newUser.phoneno && newUser.identity) {
         const result = await newUser.save();
         if (result) {

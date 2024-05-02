@@ -36,8 +36,8 @@ function UserEditDelete() {
 
     const { _id } = useParams();
     useEffect(() => {
-        // axios.get('http://localhost:3001/users/alluserdetails/' + _id)
-        axios.get('https://docs.github.com/articles/troubleshooting-custom-domains/#github-repository-setup-errors/alluserdetails/' + _id)
+        axios.get('http://localhost:3001/users/alluserdetails/' + _id)
+            // axios.get('https://docs.github.com/articles/troubleshooting-custom-domains/#github-repository-setup-errors/alluserdetails/' + _id)
             .then(function (response) {
                 setinputValue(response.data);
                 console.log(response.data);
@@ -98,8 +98,8 @@ function UserEditDelete() {
             // console.log(enterMInNameError);
 
             try {
-                // const response = await axios.put(`http://localhost:3001/users/alluserdetails/${_id}`, inputValue);
-                const response = await axios.put(`https://docs.github.com/articles/troubleshooting-custom-domains/#github-repository-setup-errors/alluserdetails/${_id}`, inputValue);
+                const response = await axios.put(`http://localhost:3001/users/alluserdetails/${_id}`, inputValue);
+                // const response = await axios.put(`https://docs.github.com/articles/troubleshooting-custom-domains/#github-repository-setup-errors/alluserdetails/${_id}`, inputValue);
                 console.log('User updated:', response.data);
             } catch (error) {
                 console.error('Error updating user:', error);

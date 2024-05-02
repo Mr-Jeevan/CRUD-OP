@@ -14,8 +14,8 @@ function Users() {
     const [message, setMessage] = useState('');
     const [usersList, setusersList] = useState([])
     useEffect(() => {
-        // axios.get('http://localhost:3001/users/alluserdetails', {})
-        axios.get('https://docs.github.com/articles/troubleshooting-custom-domains/#github-repository-setup-errors/alluserdetails', {})
+        axios.get('http://localhost:3001/users/alluserdetails', {})
+            // axios.get('https://docs.github.com/articles/troubleshooting-custom-domains/#github-repository-setup-errors/alluserdetails', {})
             .then(function (response) {
                 setusersList(response.data.users);
                 console.log(response.data.users)
@@ -48,8 +48,8 @@ function Users() {
             if (result.isConfirmed) {
                 // setusersList(prevUsersList => prevUsersList.filter(user => user._id !== _id));
 
-                // const response = await axios.delete(`http://localhost:3001/users/userdelete/${_id}`);
-                const response = await axios.delete(`https://docs.github.com/articles/troubleshooting-custom-domains/#github-repository-setup-errors/userdelete/${_id}`);
+                const response = await axios.delete(`http://localhost:3001/users/userdelete/${_id}`);
+                // const response = await axios.delete(`https://docs.github.com/articles/troubleshooting-custom-domains/#github-repository-setup-errors/userdelete/${_id}`);
                 console.log('response', response);
                 console.log(response.data.message);
                 // Update the UI to remove the deleted user

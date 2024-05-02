@@ -28,8 +28,8 @@ function LoginPage() {
         event.preventDefault();
 
         try {
-            // const response = await axios.post('http://localhost:3001/users/loginaccount',
-            const response = await axios.post('https://docs.github.com/articles/troubleshooting-custom-domains/#github-repository-setup-errors/loginaccount',
+            const response = await axios.post('http://localhost:3001/users/loginaccount',
+                // const response = await axios.post('https://docs.github.com/articles/troubleshooting-custom-domains/#github-repository-setup-errors/loginaccount',
                 { email, password },
                 {
                     headers: {
