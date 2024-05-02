@@ -8,7 +8,7 @@ app.use(express.static('uploads'))
 // controllers
 const Users = require("./users");
 
-const port = 3001
+const port = 3001 || 8080
 
 const url = "mongodb://localhost:27017/login-server"
 
