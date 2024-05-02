@@ -12,6 +12,7 @@ import { useNavigate } from 'react-router-dom';
 import myImage from './preview-img copy1.jpg';
 import mellStroy from './mellstroy hack laugh.gif'
 
+import { cloud_url } from "../../config"
 
 function CreateAccount() {
 
@@ -107,8 +108,8 @@ function CreateAccount() {
             formData.append('c_password', userConfirmPassword);
 
             try {
-                const response = await axios.post('http://localhost:3001/users/Users', formData, {
-                    // const response = await axios.post('https://docs.github.com/articles/troubleshooting-custom-domains/#github-repository-setup-errors/Users', formData, {
+                // const response = await axios.post('http://localhost:3001/users/Users', formData, {
+                const response = await axios.post(`${cloud_url}/Users`, formData, {
                     headers: {
                         'content-Type': 'multipart/form-data'
                     }

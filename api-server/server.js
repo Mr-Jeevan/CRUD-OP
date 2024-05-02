@@ -38,4 +38,3 @@ app.use("/Users/userdelete/:_id", Users)
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
 })
-// app.listen(3001)

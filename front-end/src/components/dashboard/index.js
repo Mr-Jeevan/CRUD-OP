@@ -7,12 +7,15 @@ import { Link } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
+import { cloud_url } from "../../config"
+
 function Dashboard() {
 
     const [dataCount, setDataCount] = useState(0);
 
     useEffect(() => {
-        axios.get('http://localhost:3001/users/datacount')
+        // axios.get('http://localhost:3001/users/datacount')
+        axios.get(`${cloud_url}/datacount`)
             .then(response => {
                 setDataCount(response.data.count);
             })
