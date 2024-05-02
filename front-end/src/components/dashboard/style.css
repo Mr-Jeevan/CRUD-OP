@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2d3236;
+}
+
+.feats-btn {
+    background-color: #2d3236;
+    transition: .3s ease-in-out;
+}
+
+.feats-btn.count {
+    height: 200px;
+    width: 350px;
+}
+
+.feats-btn.action {
+    height: 100px;
+    width: 350px;
+}
+
+.feats-btn:hover {
+    position: relative;
+    border-radius: 10px;
+    background: #2d3236;
+    box-shadow: 0px 0px 20px #6796b0,
+        0px 0px 10px #777c81;
+    z-index: 10;
+}
