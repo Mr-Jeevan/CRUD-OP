@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const multer = require('multer');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const usersModal = require("./usersschema");
 const { ObjectId } = require('mongodb');
 //multer
