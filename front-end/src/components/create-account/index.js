@@ -97,6 +97,7 @@ function CreateAccount() {
 
         if (userfName && userlName && userEmail && userPhoneNo && userPhoneNo.match(validPhoneNo) && userIdentity && userPassword && userConfirmPassword === userPassword) {
 
+
             //formdata
             const formData = new FormData();
             formData.append('fName', userfName);
