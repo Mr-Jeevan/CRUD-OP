@@ -17,9 +17,9 @@ const url = process.env.MONGODB_URL
 // mongoose
 mongoose.connect(url)
     .then((result) => {
-        console.log("ConnectedSuccessful to db")
+        console.log("ConnectedSuccessful to db",)
     }).catch((err) => {
-        console.log("Error in the db Connection")
+        console.log("Error in the db Connection", err)
     })
 
 // body parser
@@ -28,13 +28,12 @@ app.use(bodyParser.json())
 // cors
 app.use(cors())
 // controllers
-app.get('/', function (req, res) { })
 app.use("/Users", Users)
-app.use("/Users/loginaccount", Users)
-app.use("/Users/alluserdetails", Users)
-app.use("/Users/datacount", Users)
-app.use("/Users/alluserdetails/:_id", Users)
-app.use("/Users/userdelete/:_id", Users)
+app.use("/loginaccount", Users)
+app.use("/alluserdetails", Users)
+app.use("/datacount", Users)
+app.use("/alluserdetails/:_id", Users)
+app.use("/userdelete/:_id", Users)
 
 
 
