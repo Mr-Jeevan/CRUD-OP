@@ -18,7 +18,7 @@ mongoose.connect(url)
     .then((result) => {
         console.log("ConnectedSuccessful to db")
     }).catch((err) => {
-        console.log("Error in the Connection")
+        console.log("Error in the db Connection")
     })
 
 // body parser
