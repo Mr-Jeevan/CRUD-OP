@@ -101,7 +101,7 @@ function Users() {
                                 <td className='text-light'>{user.fName + " " + user.lName}</td>
                                 <td className='text-light'>{user.email}</td>
                                 <td className='text-light'>{user.phoneno}</td>
-                                <td style={identity_width}><img src={"http://localhost:3001/" + user.identity} alt="Identity Image" className="w-100" /></td>
+                                <td style={identity_width}><img src={"https://crud-op1.onrender.com/" + user.identity} alt="Identity Image" className="w-100" /></td>
                                 <td className='text-light'>
                                     <div className="d-flex gap-1">
                                         <Link to={`/userupdate/${user._id}`} className="btn btn-sm btn-warning">Edit</Link> |
