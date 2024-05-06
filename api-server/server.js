@@ -28,6 +28,10 @@ app.use(bodyParser.json())
 // cors
 app.use(cors())
 // controllers
+app.get('/', function (req, res) {
+    res.send('Hello World')
+})
+
 app.use("/Users", Users)
 app.use("/loginaccount", Users)
 app.use("/alluserdetails", Users)
