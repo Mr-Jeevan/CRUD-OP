@@ -94,6 +94,7 @@ function Users() {
                             width: "100px",
                             height: "auto"
                         }
+
                         return (
                             <tr key={index}>
                                 <td className='text-light'>{user._id}</td>
